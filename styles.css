@@ -1,0 +1,186 @@
+
+body, html {
+    height: 100%;
+}
+
+/* Hide scrollbars to give a more flushed look*/
+body {
+    overflow-y: hidden;
+}
+/* Change/overrule the default navbar color to green */
+.active {
+    color: green !important;
+}
+/*HOME PAGE*/
+/* Just to change the title color */
+#color {
+    color: green;
+}
+
+
+.hero-image {
+    /* We'll be using linear-gradient to darken the image and make the text
+    More conspicious*/
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(assets/tech.gif);
+    /* We want the image to cover the entire page. */
+    height: 100%;
+    background-repeat: no-repeat;
+    /* We kinda want the background image to cover  */
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    /* As shakespeare said, let thou text be centered and thee's position absolute */
+    text-align: center;
+    position: absolute;
+    /* We want the font to be large */
+    font-size: xx-large;
+    /* And we want the position to be vertically centered */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    /* A nice green for the header text */
+    color: rgb(2, 213, 136);
+}
+
+.hero-text p {
+    color: white;
+}
+
+/*PRODUCT PAGE*/
+
+/*First Section*/
+.bg-image {
+    /* This is the part of the text which we will be using alot "bg-image" */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Cringy and cliche stock image 😭 */
+.bg-image.one {
+    /* A little dark blur with a slight gradient, I think, from 0.5 to 1 */
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(assets/AI.jpg);
+    filter: blur(8px);
+    /* Compatibility for safari and chrome */
+    -webkit-filter: blur(8px);
+}
+
+.bg-text {
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    /* This will help us center the text a little */
+    transform: translate(-50%, -50%);
+    /* We want the text to appear infront of the image */
+    z-index: 2;
+    text-align: center;
+}
+
+.bg-text.one {
+    color: white;
+    top: 50%;
+}
+
+/*Second Section*/
+.bg-image.two {
+    background-color: rgb(2, 213, 136);
+}
+
+.bg-text.two {
+    color: white;
+    top: 150%;
+}
+
+.bg.text.two h1 span {
+    color: purple !important;
+}
+
+/*PRICING PAGE*/
+
+/* Our starting background video.  */
+.bg-image.video {
+    background-image: url(assets/pp.mp4);
+    
+}
+
+/* Align the background text to the center */
+.bg-text.video {
+    top: 50%;
+}
+
+/* Just changing the color of the title text */
+.bg-text.bg-text.video h1 {
+    color: rgb(255, 255, 255);
+}
+
+.bg-text.video h3 {
+    color:rgb(2, 213, 136);
+}
+
+/* This is the row where we will list all the plans */
+.priceListings {
+    background-color: rgb(182, 66, 201);
+    text-align: center;
+}
+
+.price-item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.price-item p {
+    color: white;
+    font-size: 18px;
+}
+
+/* This section we kinda snapped....  esentially each pricing plan has 
+   It's own colors and style*/
+
+#free {
+    color: white;
+}
+
+#premium h2 {
+    color: rgb(131, 202, 16);
+}
+
+#premium h3 {
+    color: rgb(131, 202, 16);
+}
+
+#premium p {
+    color: rgb(206, 248, 139);
+}
+
+#elite h2 {
+    color: rgb(255, 184, 51);
+}
+
+#elite h3 {
+    color: rgb(255, 184, 51);
+}
+
+#elite p {
+    color: rgb(255, 230, 147);
+}
+
+/*ABOUT PAGE*/
+
+/* Simple about page using the same fundamentals of our prior, 
+   But with a different image and a softer blur */
+.bg-image.about {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/sv.jpg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.bg-text.about {
+    color: rgb(202, 255, 211);
+    top: 50%;
+}
